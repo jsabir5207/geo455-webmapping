@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>ex3-05</title>
+    </head>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+    var num = "";
+    
+    for (var i = -9; i < 10; i++) { // change to a different number
+        num += "The number is " + i + "<br>";
+    }
+    document.getElementById("demo").innerHTML = num;
+    
+    var num_brk = "";
+    
+    for (var z = 4; z < 15; z++) {
+        if(z===13) {break;}
+        num_brk += "The number is " + z + " lets loop again" + "<br>";
+    }
+    document.getElementById("demo1").innerHTML = num_brk;
+    
+    
+    var cars = ["Tesla", "Volvo", "BMW", "Ford", "Fiat", "Audi"];
+    
+    var carnames = "";
+    
+    for (var j = 0; j < cars.length; j++) {
+        carnames += cars[j] + " automobile" + "<br>";
+    }
+    document.getElementById("demo2").innerHTML = carnames;
+
+</script>
+
+ <footer class="center">
+    <small><a href='geo455_ex3.html'>Back to Main Page</a></small>
+  </footer>
+</body>
+</html>
