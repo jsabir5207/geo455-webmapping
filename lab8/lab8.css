@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: calc(100vh - 90px);
+    width: 100%;
+}
+.navbar-brand {
+    font-size: 40px;   /* makes “Lab 8” big */
+    text-align: center;
+    width: 100%;
+}
+
+.navbar .fw-semibold {
+    font-size: 18px;   /* makes subtitle bigger */
+    text-align: center;
+    width: 100%;
+    display: block;
+}

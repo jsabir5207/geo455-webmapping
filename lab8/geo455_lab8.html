@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         html,
+         body {
+            margin: 0;
+            padding: 0;
+         }
+         #map {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+         }
+         #event {
+            position: absolute;
+            top: 50px;
+            right: 600px;
+            height: 100px;
+            width: 400px;
+            z-index: 10000;
+         }
+         .btn {
+            border-color: grCan ay;
+            border-width: 2px;
+            background-color: #000000;
+         }
+         .navbar-brand {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+         .fw-semibold {
+      font-size: 18px;
+            text-align: center;
+            width: 100%;
+      display: block;
+}
+      </style>
+      <title>geo455_lab8</title>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   </head>
+    
+   <body>
+<nav class="navbar navbar-light bg-white border-bottom sticky-top">
+  <div class="container-fluid justify-content-center text-center flex-column">
+
+    <div class="navbar-brand fw-semibold fs-3">
+      Lab 8
+    </div>
+
+    <div class="fw-semibold">
+      GEO 455: Commute Flow Map to Dane County, WI (2011-2015)
+      <br />
+      <a href="../index.html">return to home page</a>
+    </div>
+<div id="description">
+    <h2>About this map</h2>
+    <p>This map shows the flow of commuters into Dane County, WI from the surrounding counties. The number of commuters corresponds with the thickness of each flow line</p>
+     <p> map authorized by Jacob Sabir</p>
+  </div>
+  </div>
+</nav>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-9">
+               <div id="map"></div>
+            </div>
+         </div>
+      </div>
+
+      <script src="lab8.js"></script>
+   </body>
+</html>
