@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Crosse Outdoor Activity Map</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>La Crosse, Houston, Winona County: Outdoor Activities</h1>
+    <p>Parks and Trails</p>
+  </header>
+
+  <div id="map"></div>
+
+  <!-- Second HTML Page -->
+  <a id="about-btn" href="aboutmap.html" target="_blank">About this map</a>
+  <!-- Layer toggle panel -->
+  <div id="controls">
+    <h2>Layers</h2>
+    <label class="layer-toggle">
+      <input type="checkbox" id="toggle-parks" checked />
+      State parks
+    </label>
+    <label class="layer-toggle">
+      <input type="checkbox" id="toggle-trails" checked />
+      Trailheads
+    </label>
+    <label class="layer-toggle">
+      <input type="checkbox" id="toggle-choropleth" checked />
+      Amenity score
+    </label>
+  </div>
+
+  <!-- Legend -->
+  <div id="legend">
+    <h2>Amenity score</h2>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:#1a4a1a;"></div>
+      <span>5 — Fully equipped</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:#2d6b2d;"></div>
+      <span>4 — Well equipped</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:#4a8c3a;"></div>
+      <span>3 — Moderate</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:#7ab05a;"></div>
+      <span>2 — Basic</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:#b8d48a;"></div>
+      <span>1 — Primitive</span>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Map -->
+  <script src="map.js" defer></script>
+</body>
+</html>
