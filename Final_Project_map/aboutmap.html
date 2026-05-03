@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>About my map</title>
+    </head>
+    <body bgcolor="#5b9e80">
+       
+       <h1 align="center">Map Information and Data Credits</h1>
+    <div class="card">
+  <h2>Map Information</h2>
+  <p>This Web Map serves as an interactive guide to parks and hiking / biking trails in La Crosse Wisconsin and the surrounding counties.
+       <br> I wanted to make this map because I have personally found that finding information on new places to hike can be daunting, and require searching through multiple
+       websites. I believe this map can consolidate otherwise scattered information for avid enjoyers of the outdoors, or those in the La Crosse area who
+       seek to get more into outdoor activity, but do not know where to look</p>
+</div>
+
+<div class="card">
+   <h2>Methodology</h2>
+   <p>
+      Spatial data was acquired from the Wisconsin DNR GIS Open Data Portal, the Minnesota Geospatial Commons, and La
+      Crosse County GIS resources. Trails in Great River Bluffs State Park, Perot State Park, Goose Island County Park,
+      and Reno Recration area were manually digitized with the help of AllTrails due to a lack of opensource data on trails in
+       those parks. All datasets were projected to WGS 1984, exported as GeoJSON, and added to the map using fetch. Amenity
+      scores were assigned manually on a scale of 1–5 based on available facility information. Trail difficulty
+      classifications were sourced from existing attribute data from the La Crosse County Trails Dataset.
+   </p>
+</div>
+
+<div class="card">
+  <h2>Data Credits</h2>
+  <p>WI State Park Polygon Boundaries: Wisconsin DNR GIS Open Data Portal (data-wi-dnr.opendata.arcgis.com)
+<br>MN State Park Polygon Boundaries: Minnesota DNR via Minnesota Geospatial Commons (gisdata.mn.gov) <br>
+ park boundaries and trails: La Crosse County Land Information GIS Office <br>
+Basemap tiles: OpenStreetMap, CARTO <br>
+Mapping library: Leaflet.js (leafletjs.com).</p>
+</div>
+<div class="card">
+  <h2>Project Notes</h2>
+  <p>I believe that the simplicity of this project is a big strength. I originally wanted to add several more factors such as
+     boat launches, campsites, and beaches, but time contraints and difficulty finding open source data led me to deciding on 
+     2 thematic layers and 2 geometry layers. However, I think this makes the map very concise and to the point. The 2 thematic layers
+     that I currently have work well with each other, and I didn't experience any conflicts or difficulty with layers loading. Finding data for trails in lesser known state parks was much more difficult than I expected, 
+     and I ran into data loss while I was digitizing trail data for the last several parks. Before the final submission, I plan to re-digitize the trails that I lost, and add a point layer for trailheads with a popup. <br>
+.</p>
+</div>
+       <a href="../index.html">Back to main page</a><br>
+        <a href="index.html">Return to Map</a>
+     </body>
+</html>
