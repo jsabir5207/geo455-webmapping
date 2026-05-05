@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>About my map</title>
+    </head>
+    <body bgcolor="#5b9e80">
+       
+       <h1 align="center">Map Information and Data Credits</h1>
+    <div class="card">
+  <h2>Introduction, Motivation, Objectives</h2>
+  <p>This Web Map serves as an interactive guide to parks and hiking / biking trails in La Crosse Wisconsin and the surrounding counties.
+       <br> I wanted to make this map because I have personally found that finding information on new places to hike can be daunting, and require searching through multiple
+       websites. I believe this map can consolidate otherwise scattered information for avid enjoyers of the outdoors, or those in the La Crosse area who
+       seek to get more into outdoor activity, but do not know where to look</p>
+</div>
+
+<div class="card">
+   <h2>Data and Methodology</h2>
+   <p>
+      Spatial data was acquired from the Wisconsin DNR GIS Open Data Portal, the Minnesota Geospatial Commons, and La
+      Crosse County GIS resources, and Tailforks. <br />
+      For trail data acquired from opensource geospatial data, the processing involved downloading and importing
+      shpfiles in to ArcGIS pro, selecting significant trails from each dataset, modifying the attribute table to
+      include fields that matched my desired layers, and exporting as geojson files. For the trails downloaded from
+      trailforks, each trail was individually downloaded as a KML file and imported into a feature class using the KML
+      to Layer tool. <br />
+      For the amenity score thematic layer, I based my rating primarily on the availability of parking and restrooms. I
+      also took into account campsite availability and quality of the trails. This information is based on the point
+      data for restrooms and parking from Trailforks, park and trail reviews from AllTrails, and personal experience.
+      For example, the state parks are all rated highly because they have multiple parking spaces, restrooms, and
+      campgrounds. Municipal parks are rated slightly lower because they have parking and restrooms, but no camping.
+      More primitive parks such as Coulee Experimental Forest have the lowest rating, as it only has one parking area
+      and no restrooms. <br />
+      For trail difficulty, length, and activity type, the La Crosse County data set and state park data sets came with
+      this information in the attribute table. For other parks, I cross referenced this information with AllTrails and
+      added the fields manually in ArcGIS Pro
+   </p>
+</div>
+
+<div class="card">
+  <h2>Data Credits</h2>
+  <p>WI State Park Polygon Boundaries: Wisconsin DNR GIS Open Data Portal (data-wi-dnr.opendata.arcgis.com)
+<br>MN State Park Polygon Boundaries: Minnesota DNR via Minnesota Geospatial Commons (gisdata.mn.gov) <br>
+ park boundaries and trails: La Crosse County Land Information GIS Office <br> Other trails: TrailForks Data Download <br>
+Basemap tiles: OpenStreetMap, CARTO <br>
+Mapping library: Leaflet.js (leafletjs.com).</p>
+</div>
+<div class="card">
+  <h2>Project Notes</h2>
+  <p>
+     I believe that the simplicity of this project is a big strength. I originally wanted to add several more factors
+     such as boat launches, campsites, and beaches, but time contraints and difficulty finding open source data led me
+     to deciding on 2 thematic layers and 2 geometry layers. However, I think this makes the map very concise and to the
+     point. The 2 thematic layers that I currently have work well with each other, and I didn't experience any conflicts
+     or difficulty with layers loading in. There is however an occasional issue with the interactivity, but it resolves
+     by switching the layer off and on again. Finding data for trails in lesser known parks was  more
+     difficult than I expected, but finding the option to download trails as KML files from TrailForks was a huge help <br />
+     .
+  </p>
+</div>
+       <div class="card">
+  <h2>Use of AI disclaimer</h2>
+  <p>
+      AI was used for the following parts of the project: <br> Developing a workflow for importing and cleaning trail and park boundary data <br>
+     Troubleshooting issues with Javascript code <br>
+     Answering questions on CSS design
+  </p>
+</div>
+       <a href="../index.html">Back to main page</a><br>
+        <a href="index.html">Return to Map</a>
+     </body>
+</html>
